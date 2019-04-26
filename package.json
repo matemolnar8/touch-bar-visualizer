@@ -1,0 +1,13 @@
+{
+  "name": "touch-bar-visualizer",
+  "version": "1.0.0",
+  "description": "Touch Bar visualizer using buttons",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "matemolnar8",
+  "devDependencies": {
+    "electron": "5.0.0"
+  }
+}
