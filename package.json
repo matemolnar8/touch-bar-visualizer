@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Touch Bar visualizer using buttons",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matemolnar8/touch-bar-visualizer"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "electron ."
   },
