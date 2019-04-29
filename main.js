@@ -24,11 +24,13 @@ function createWindow() {
     touchBarButtons.push(touchBarButton);
   }
 
+  const levelColors = ["#110000", "#330000", "#550000", "#770000", "#990000", "#bb0000", "#dd0000", "#ff0000"];
+
   ipcMain.on('visualizer', (event, val) => {
     const max = val * 8;
     for (let i = 0; i < 8; ++i) {
       const touchBarButton = touchBarButtons[i];
-      touchBarButton.backgroundColor = i < max ? "#ffffff" : "#000000";
+      touchBarButton.backgroundColor = i < max ? levelColors[i] : "#000000";
     }
   });
 

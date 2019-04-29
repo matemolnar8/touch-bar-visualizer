@@ -1,7 +1,7 @@
 const { ipcRenderer } = require('electron');
 
 navigator.getUserMedia({video: false, audio: true}, (localMediaStream) => {
-    const audioContext = new AudioContext(); // NEW!!
+    const audioContext = new AudioContext();
     const analyser = audioContext.createAnalyser();
     const microphone = audioContext.createMediaStreamSource(localMediaStream);
     const processor = audioContext.createScriptProcessor(2048, 1, 1);
