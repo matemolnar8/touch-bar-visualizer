@@ -24,7 +24,7 @@ function createWindow() {
     touchBarButtons.push(touchBarButton);
   }
 
-  const levelColors = ["#110000", "#330000", "#550000", "#770000", "#990000", "#bb0000", "#dd0000", "#ff0000"];
+  const levelColors = ["#330000", "#330000", "#550000", "#770000", "#990000", "#bb0000", "#dd0000", "#ff0000"];
 
   ipcMain.on('visualizer', (event, val) => {
     const max = val * 8;
@@ -33,7 +33,7 @@ function createWindow() {
       touchBarButton.backgroundColor = i < max ? levelColors[i] : "#000000";
     }
   });
-
+  
   const touchBar = new TouchBar({ items: touchBarButtons });
 
   mainWindow.setTouchBar(touchBar);
